@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Content & Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      text-align: left;
+      padding: 8px;
+    }
+    fieldset {
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+      color: #444;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+      width: auto;
+      border: none;
+      padding: 10px 15px;
+    }
+    input[type="submit"]:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Enhanced HTML5 Page</h1>
+  <p>This page demonstrates the use of <strong>lists, tables, media</strong>, and a complete <strong>HTML5 form</strong> with validation.</p>
+</header>
+
+<section>
+  <h2>1. Lists</h2>
+  <p>Here are some of my favorite hobbies:</p>
+  <ul>
+    <li>Reading technology blogs</li>
+    <li>Playing the guitar</li>
+    <li>Watching documentaries</li>
+  </ul>
+
+  <p>Steps to create a simple web page:</p>
+  <ol>
+    <li>Write the HTML structure</li>
+    <li>Add content such as text and images</li>
+    <li>Style with CSS</li>
+    <li>Enhance with JavaScript if needed</li>
+  </ol>
+</section>
+
+<section>
+  <h2>2. Tables</h2>
+  <p>Sample weekly schedule:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Activity</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>Web Development Class</td>
+        <td>9:00 AM - 11:00 AM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Database Management</td>
+        <td>4:00 PM - 6:00 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>startup meeting and insights</td>
+        <td>2:00 PM - 4:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>3. Media</h2>
+  <p>Here’s a sample my favourite image and one of the best audio file:</p>
+  <img src="mysource/guitar.jpeg" alt="Sample Image" width="400">
+  <br><br>
+  <audio controls>
+    <source src="mysource/Lucky-Dube-Nobody-Can-Stop-Reggae.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<section>
+  <h2>4. HTML5 Form</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?\d{10,15}$" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Details</legend>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="newsletter" value="yes" checked>
+        Subscribe to Newsletter
+      </label>
+
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" name="color">
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <label for="comments">Your Message:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Write something..."></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit Form">
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 My HTML5 Assignment Page</p>
+</footer>
+
+</body>
+</html>
